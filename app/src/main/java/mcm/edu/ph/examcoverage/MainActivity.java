@@ -28,13 +28,19 @@ public class MainActivity extends AppCompatActivity {
         txtbox =   findViewById(R.id.txtBox); //gitawag nato ang txtBox EditText gikan sa activity_main.xml
         numbox =   findViewById(R.id.numBox); //gitawag nato ang numBox EditText, dummy data, gamiton nato for illustration purposes
 
-        spinner.setOnItemClickListener( //listener para sa spinner para magcollapse sya pag iclick type lang spinner.setOnItemClickListener();
-                new AdapterView.OnItemClickListener() {
-                    //for this part para mag auto complete type lang new AdapterView.OnItemClickListener then iclick ang suggestion
+
+        spinner.setOnItemSelectedListener( //listener para sa spinner para magcollapse sya pag iclick type lang variableninyo.setOnItemSelectedListener();
+                new AdapterView.OnItemSelectedListener() {
+                    //for this part para mag auto complete type lang new AdapterView.OnItemSelectedListener then iclick ang suggestion
                     @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                         //diri nimo ibutang ang code para maselect ang option gikan sa spinner
                         txtFromSpinner = spinner.getSelectedItem().toString(); // mao ni ang code para makuha nato ang giselect sa spinner. gibutang nato sa string
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> parent) {
+                        //blangkohi lang diri
                     }
                 }
         );

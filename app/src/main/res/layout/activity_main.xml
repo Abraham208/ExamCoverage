@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:clickable="false"
+        android:enabled="false"
         android:text="12345"
         app:layout_constraintBottom_toTopOf="@+id/kibsSpin"
         app:layout_constraintEnd_toEndOf="@+id/txtBox"
