@@ -18,7 +18,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Spinner note below -->
     <Spinner
+        android:id="@+id/kibsSpin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="56dp"
@@ -34,5 +36,19 @@
     unod sa spinner. Ang strings ani naa sa res/values/strings.xml
     follow this format
     -->
+
+
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/kibsSpin"
+        app:layout_constraintStart_toStartOf="@+id/kibsSpin"
+        app:layout_constraintTop_toBottomOf="@+id/kibsSpin" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

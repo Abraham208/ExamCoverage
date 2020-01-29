@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">ExamCoverage</string>
 
-    <!-- Anything type below this comment is coded by me -->
+    <!--
+    Anything type below this comment is coded by me.
+    Ang string array na nakita nimo below is mao ang gitawag
+    para naay unod ang spinner.
+    -->
 
     <string-array name="fruit">
         <item>Banana</item>
