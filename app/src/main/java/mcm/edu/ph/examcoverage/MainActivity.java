@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                          *  variable name lang gihapon. So ang nahitabo ani nga line of code is atong gi
                          *  pasa ang unod ni txtFromSpinner (which is string) padulong kay TEXT_SA_SPINNER
                          **/
-                        i.putExtra("INT_NATO", number); //same sa example sa taas. integer sya pero same lang gihapon.
+                        i.putExtra("INTS", number); //same sa example sa taas. integer sya pero same lang gihapon.
                         i.putExtra("TEXT_SA_TXTBOX", txtFromTxtbox); //ato napud gipasa ang unod gikan sa textbox
                         startActivity(i); //nag indicate nga istart na nato ang intent. always last ni sa intent code.
 

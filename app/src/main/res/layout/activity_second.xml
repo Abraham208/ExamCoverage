@@ -7,7 +7,7 @@
     tools:context=".SecondActivity">
 
     <TextView
-        android:id="@+id/txtBoxTxt"
+        android:id="@+id/tb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
@@ -20,23 +20,23 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/spinTxtBox"
+        android:id="@+id/tb2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="132dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/txtBoxTxt"
+        app:layout_constraintEnd_toEndOf="@+id/tb1"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/txtBoxTxt"
-        app:layout_constraintTop_toBottomOf="@+id/txtBoxTxt" />
+        app:layout_constraintStart_toStartOf="@+id/tb1"
+        app:layout_constraintTop_toBottomOf="@+id/tb1" />
 
     <TextView
-        android:id="@+id/numTxtBox"
+        android:id="@+id/tb3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/spinTxtBox"
-        app:layout_constraintStart_toStartOf="@+id/spinTxtBox"
-        app:layout_constraintTop_toBottomOf="@+id/spinTxtBox" />
+        app:layout_constraintEnd_toEndOf="@+id/tb2"
+        app:layout_constraintStart_toStartOf="@+id/tb2"
+        app:layout_constraintTop_toBottomOf="@+id/tb2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
