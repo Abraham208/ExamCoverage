@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ExamCoverage</string>
+
+    <!-- Anything type below this comment is coded by me -->
+
+    <string-array name="fruit">
+        <item>Banana</item>
+        <item>Eggplant</item>
+        <item>Horse</item>
+        <item>Takumi</item>
+    </string-array>
+
+
+</resources>
