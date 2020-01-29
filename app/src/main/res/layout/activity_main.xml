@@ -15,29 +15,42 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/numBox"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Spinner note below -->
+
+    <EditText
+        android:id="@+id/numBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:clickable="false"
+        android:text="12345"
+        app:layout_constraintBottom_toTopOf="@+id/kibsSpin"
+        app:layout_constraintEnd_toEndOf="@+id/txtBox"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/txtBox"
+        app:layout_constraintTop_toBottomOf="@+id/txtBox" />
+
     <Spinner
         android:id="@+id/kibsSpin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtBox"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="@+id/txtBox"
-        app:layout_constraintTop_toBottomOf="@+id/txtBox"
-
+        android:layout_marginTop="48dp"
         android:entries="@array/fruit"
-        />
+        app:layout_constraintBottom_toTopOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="@+id/numBox"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/numBox"
+        app:layout_constraintTop_toBottomOf="@+id/numBox" />
+    <!-- Spinner note below -->
     <!--
     Sir's note: android:entries="@array/fruit" para naay data ang
     unod sa spinner. Ang strings ani naa sa res/values/strings.xml
-    follow this format
+    follow this format!
     -->
-
-
 
 
     <Button
@@ -45,8 +58,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="Button"
+        android:text="Click"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/kibsSpin"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/kibsSpin"
         app:layout_constraintTop_toBottomOf="@+id/kibsSpin" />
 
